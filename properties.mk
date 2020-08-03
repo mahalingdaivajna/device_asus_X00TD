@@ -1,5 +1,11 @@
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.is_type=5 \
+    persist.vendor.camera.mpo.disabled=1 \
+    persist.vendor.camera.preview.ubwc=0 \
+    persist.vendor.camera.HAL3.enabled=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
@@ -7,4 +13,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.sf.lcd_density=440
+   ro.sf.lcd_density=480
+
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.sys.iscdfinger_998eas=1 \
+   persist.sys.fingerauto=1
+
