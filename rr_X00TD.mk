@@ -46,5 +46,6 @@ BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# Faceunlock
+# RR Stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := Official
